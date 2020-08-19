@@ -1,0 +1,111 @@
+@media (min-width: 1367px) and (max-width: 1440px) {
+        p {font-size: 25px;}
+        h2{font-size: 2.7rem;}
+        img {width: auto}
+        h1{ padding: 45px 0px; }
+        button.btn{
+                padding:13px 28px ;
+                font-size: 19px;}
+        .Best-Deals .box::before{left: 25px;
+                right: 25px;
+                font-size: 35px;}
+        .contact .details i{font-size: 24px; padding: 17px;} 
+        .contact .form input{padding: 15px;}
+        .contact .form textarea{padding: 15px;}
+        .subscribe .content form input { width: 70%;}
+        nav .navbar-content{ display: block !important;}
+        nav img{ width: auto !important; }
+        .contact .details .content i {
+        height: 52px;
+        width: 52px;
+        font-size: 22px;
+        padding: 15px;
+        }
+}
+
+@media (min-width: 1201px) and (max-width: 1366px) {
+        p {font-size: 25px;}
+        h2{font-size: 2.4rem;}
+        img {width: auto}
+        h1{ padding: 40px 0px; }
+        button.btn{
+                padding:13px 28px ;
+                font-size: 19px;}
+        .Best-Deals .box::before{left: 25px;
+                right: 25px;
+                font-size: 35px;}
+        .contact .details i{font-size: 24px; padding: 17px;} 
+        .contact .form input{padding: 13px;}
+        .contact .form textarea{padding: 13px;}
+        .subscribe .content form input { width: 70%;} 
+        .navbar-content{display: block !important;} 
+        nav img{ width: auto !important; }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+        p {font-size: 25px;}
+        h2{font-size: 2.4rem;}
+        img {width: auto}
+        h1{ padding: 35px 0px; }
+        button.btn{
+                padding:13px 28px ;
+                font-size: 19px;}
+        .Best-Deals .box::before{left: 25px;
+                right: 25px;
+                font-size: 32px;}    
+        .contact .details i{font-size: 21px; padding: 17px;}
+        .subscribe .content form input { width: 70%;} 
+        .navbar-content{ display: block !important; }      
+        nav img{ width: auto !important; }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+        p { font-size: 21px;}
+        h2 {font-size:2.4rem;}
+        img {width: auto}
+        h1{ padding: 30px 0px; }
+        button.btn{
+                padding:13px 28px ;
+                font-size: 19px;}
+        .Best-Deals .box::before{left: 25px;
+                right: 25px;
+                font-size: 30px;}
+        .navbar-content{ display: block !important; }
+        nav img{ width: auto !important; }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+        p {font-size: 21px;}
+        h2 {font-size: 1.75rem;}
+        h1{ padding: 25px 0px; }
+        button.btn{
+                padding:13px 28px ;
+                font-size: 19px;}
+        .Best-Deals .box::before{left: 25px;
+                right: 25px;
+                font-size: 30px;}
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+        button.btn{
+                padding:13px 28px ;
+                font-size: 19px;}
+        .Best-Deals .box::before{left: 25px;
+                right: 25px;
+                font-size: 28px;}
+        .header{padding-top: 115.5px;}
+        button.navbar-toggler { top: 45%;}
+}
+
+@media (min-width: 426px) and (max-width: 576px) {
+        .header{padding-top: 109.5px;}
+        button.navbar-toggler { top: 28%;}
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+        .header{padding-top: 66.5px;}
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+        .header{padding-top: 52.5px;}
+}

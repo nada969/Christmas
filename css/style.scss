@@ -1,0 +1,514 @@
+$primary:#e8152a;
+$seccolor:#3a4149;
+$thirdcolor:#f7f7f7; 
+$nicecolor:#666666;
+
+@font-face{
+    src: url(../fonts/Great_Vibes/GreatVibes-Regular.ttf);
+    font-family: 'Great Vibes';
+}
+
+*{margin: 0%; box-sizing: border-box;}
+///////////items
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1{
+    color: $primary;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 51px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: $primary;
+    img {
+        width: 25%;
+    }
+    }
+
+p {
+    font-size: 18px;  
+    color: $nicecolor;
+    margin: 20px 0px;
+    }
+
+input{
+    border: none;
+    margin-bottom: 15px;
+}
+
+button.btn{
+    background-color:$primary;
+    border-radius: 0px 25px 0px 25px;
+    padding: 10px 16px;
+    font-size: 17px;
+    margin: 20px 0;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    z-index: 1;  
+    overflow: hidden;
+    color: white;
+    transition: 0.1s ease-in-out;
+    text-transform: capitalize;
+    padding-bottom: 11px;
+    &:hover , &:focus{
+        color: white;
+        box-shadow: 0 0 0 0;
+    }
+}
+
+////////////////divs
+.nav{
+    width: 100%;
+    background-color: white;
+    z-index: 13;
+    overflow: hidden;        
+    position: fixed;
+    nav{
+        margin: auto;
+        text-transform: capitalize;
+        width: 100%;
+        height: inherit;
+        background: white;
+            img{
+                width: 45%;
+            }
+            button.navbar-toggler {
+                position: absolute;
+                background: transparent;
+                height: auto;
+                right: 10%;
+                span.navbar-toggler-icon {
+                    background: #d3d3d3;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 11%;
+                    border-radius: 33%;
+                    &:first-child{
+                        top: 0;
+                    }
+                    &:nth-child(3){
+                        top: 44.5%                
+                    }
+                    &:nth-child(5){
+                        bottom: 0;
+                    }
+                }
+                &:focus{
+                    outline: none;
+                    border: none;
+                }
+                i {
+                    &::before{    
+                        color: $primary;
+                    }
+                }
+            }
+        .navbar-content{
+            margin-left: auto;
+            display: none;
+            .nav-item{
+                padding-left: 10px;
+                padding-right: 10px;
+                a{
+                    font-weight: 400;
+                    padding: 8px 15px;
+                    color: black;
+                    font-size: 18px;
+                    
+                }
+                &:hover{
+                    transition: .4s ease-in-out;
+                    cursor: pointer;
+                a{ color: white;}
+                    background-color:$primary;
+                    border-radius: 0px 25px 0px 25px;
+                    overflow: hidden;
+                }
+            }   
+        }
+    }
+}
+
+.header{
+    width: 100%; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+    padding-top: 52.5px;
+    ol.carousel-indicators{
+        z-index: 1;
+        li.carousel{
+            padding-right: 15px;
+            padding-left: 15px;
+            background-color: $primary;
+            padding-top: 9px;
+            border-radius: 27px 27px 27px 27px;
+        }
+    }
+}
+
+.Best-Wishes , .Jonh-Max-Wishes {
+    padding: 38px 0;
+    b{
+        font-weight: 700;
+        margin-top: 55px;
+        color: $primary;
+        font-size: 45px;
+    }
+    .text{
+        margin-top: 25px;
+        button.btn{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                background-color: $seccolor;
+                border-radius: 50%;
+                transition: transform .5s ease-in-out;
+                transform: scaleX(0);
+            }
+            &:hover::before ,&:focus::before{
+                transform: scaleX(9);
+            }
+        }
+    }
+}
+
+.Best-Deals{
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    .box{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(-45deg, #EC65B7 0%,#05E0D8 100%);
+            opacity: .5;
+            z-index: -1;
+            display: none;
+        }
+        &:hover::after , &:focus::after{
+            display: block;
+            transition: .3s ease-in-out;
+        }
+        figure{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+        &::before{
+            position: absolute;
+            top: 21px;
+            height: 9vh;
+            color: white;
+            text-transform: capitalize;
+            background-color: $primary;
+            left: 45px;
+            right: 45px;
+            font-size: 27px;
+        }
+    }
+    .deal1{
+        height:auto ;
+        width: 100%;
+        border: 8px solid #ece7e6;
+        opacity: 0.85;
+        &:hover , &:focus{
+            border: 8px solid $primary;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+        &::before{
+            content: 'deal one';
+        }
+    }
+    .deal2{
+        height:auto;
+        width: 100%;
+        border: 8px solid #ece7e6;
+        opacity: 0.85;
+        &:hover , &:focus{
+            border: 8px solid $primary;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+        &::before{
+            content: 'deal two';
+        }
+    }
+    .deal3{
+        height:auto;
+        width: 100%;
+        border: 8px solid #ece7e6;
+        opacity: 0.85;
+        &:hover , &:focus{
+            border: 8px solid $primary;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+        &::before{
+            content: 'deal three';
+        }
+    }
+    .deal4{
+       height:auto;
+       width: 100%;  
+       border: 8px solid #ece7e6;
+       opacity: 0.85;
+       &:hover , &:focus{
+           border: 8px solid $primary;
+           cursor: pointer;
+           transition: .3s ease-in-out;
+       }
+       &::before{
+           content: 'deal four';
+       }
+    }
+}
+
+.Donate{
+    width: 100%;
+    height: auto;
+    background-color: $thirdcolor;
+    padding: 30px 0;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    .row{
+        margin: 0;
+        .box{
+            -webkit-box-flex: auto ;
+            -ms-flex: auto;
+            flex: auto;
+            width: 49vh;
+            height: auto;
+            border: 5px solid white;
+            opacity: 0.85;
+            overflow: hidden;
+            margin: 30px 15px;
+            position: relative;
+            .overlay{
+                background: white;
+                color: $primary;
+                font-size: 22px;
+                text-align: center;
+                width: 38px;
+                height: 38px;
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 9999999;
+                opacity: 0;
+                transition: opacity 0.35s ease-in-out;
+                -webkit-transition: opacity 0.35s ease-in-out;
+                -moz-transition: opacity 0.35s ease-in-out;
+                -o-transition: opacity 0.35s ease-in-out;
+                -moz-transition: opacity 0.35s ease-in-out;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 45vh;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: red;
+                opacity: .6;
+            }
+            &:hover::after , &:focus::after{
+                display: block;
+                transition: .4s ease-in-out;
+                top: 0;
+            }
+            &:hover , &:focus{
+                border: 5px solid $primary;
+                cursor: pointer;
+                transition: .4s ease-in-out;
+                .overlay{opacity: 1;}
+            }
+        }
+    }
+}
+
+.testmonial{
+    width: 100%;
+    padding-top: 11vh;
+    padding-bottom: 11vh;
+    .owl-carousel{
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        img {
+            border-radius: 50%;
+            width: 25vh;
+            height: auto;
+            margin: 4vh auto;
+        }
+        h{
+            color: $primary;
+        }
+        }
+    .owl-nav{
+        display: none;
+    }
+}
+    
+.contact{
+    width: 100%;
+    background-color: $thirdcolor;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+    .form{
+        text-align: center;
+        input{
+            padding: 7px;
+            background-color: $seccolor;
+            color: beige;
+            width: 100%;
+            &:focus{
+                outline: none;
+            }
+        }
+        textarea{
+            resize: vertical;
+            width: 100%;
+            height: 100px;
+            padding: 7px;
+            max-height: 700px;
+            outline: none;
+            background-color: $seccolor;
+            margin-bottom: 15px;
+            color: beige;
+            &:focus{
+                outline: none;
+            }
+        }
+        button.btn{
+            &:hover , &:focus{
+                box-shadow: 0 0 0 0;
+                background-color:$seccolor;
+            }
+        }
+    }
+
+    .details{
+        .content{
+            display: flex;
+            margin-bottom: 15px;
+            a{
+                color:$nicecolor ;
+                &:hover , &:focus{
+                    color: rgba(45, 223, 247, 0.911);
+                    cursor: pointer;
+                    transition: .2s ease-in;
+                    text-decoration-line: none;
+                }
+            }
+        
+        i {
+            background-color: #e8152a;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            color: white;
+            margin-right: 16px;
+            font-size: 19px;
+            text-align: center;
+            padding: 12px;
+            }        
+        }
+    }
+}
+
+.subscribe{
+    background-color: $primary;
+    .content{
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+        color: white;
+        h1{
+            color: white;
+        }
+        form{
+            input{
+                padding: 11px;
+                background-color: white;
+                width: 75%;
+            }
+        }
+        button.btn{
+            background-color:$seccolor;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                background-color: #51565c;;
+                border-radius: 50%;
+                transition: transform .5s ease-in-out;
+                transform: scaleX(0);
+            }
+            &:hover::before ,&:focus::before{
+                transform: scaleX(9);
+            }
+        }
+    }
+}
+
+//////button top
+button#topBtn {
+    border: 1.5px solid $primary;
+    border-radius: 50%;
+    background: white;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    display: none;
+    i{
+        color: $primary;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+
+
+///////////////404-page
+// .page{
+//     h1 {
+//         color: blue;
+//     }
+// }
